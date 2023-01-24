@@ -1,0 +1,114 @@
+body {
+  background-color: #304854;
+  font-family: Didot;
+  text-align: center;
+}
+
+div {
+  border: 6px solid #fbb97d;
+  display: inline-block;
+}
+
+img {
+  border-radius: 50%;
+  border: 10px solid #304854;
+  width: 600px;
+  height: 600px;
+}
+
+.source {
+  background-color: #8c3f54;
+  width: 800px;
+  display: inline-block;
+}
+
+#title {
+  font-size: 50px;
+  background-color: #fbb97d;
+  color: #304854;
+  margin: auto;
+  padding: 20px;
+}
+
+.info {
+  background-color: #8c3f54;
+  width: 800px;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.one {
+  background-color: #2d4f5a;
+}
+
+.dot.two {
+  background-color: #a7b188;
+}
+
+.dot.three {
+  background-color: #843d4e;
+}
+
+.dot.four {
+  background-color: #fbb97d;
+}
+
+#square {
+  height: 100px;
+  width: 100px;
+  background-color: #fbb97d;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 400px) {
+  #title {
+    font-size: 20px;
+  }
+  .source {
+    width: 300px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .info {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #title {
+    font-size: 40px;
+  }
+  .source {
+    width: 500px;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .info {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #title {
+    font-size: 50px;
+  }
+  .source {
+    width: 800px;
+  }
+  img {
+    width: 600px;
+    height: 600px;
+  }
+  .info {
+    width: 800px;
+  }
+}
