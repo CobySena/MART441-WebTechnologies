@@ -1,0 +1,169 @@
+<html>
+
+    <style>
+        body{
+            background-color: #eee1fc;
+        }
+    </style>
+
+
+    <script>
+      var end = null;
+      do {
+          function getChoice1()
+          {
+              var myChoice = document.getElementById("choice").value;
+              var myQuestion = document.getElementById("question");
+              if(myChoice === "Left")
+              {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
+
+                  document.getElementById("choice2").style.display="block";
+                  document.getElementById("btnSubmit2").style.display="block";
+
+                  document.getElementById("mainImage").src = "./images/ring.jpg";
+
+                  myQuestion.innerHTML = "You point to the left hand, and the hooded figure opens it up to show a ring. The figure then lifts its hand closer to you and asks, 'Do you wish to put it on?'";
+              }
+              else if(myChoice === "Right")
+              {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
+
+                  document.getElementById("choice3").style.display="block";
+                  document.getElementById("btnSubmit3").style.display="block";
+
+                  document.getElementById("mainImage").src = "./images/bracelet.jpg";
+
+                  myQuestion.innerHTML = "You point to the right hand, and the hooded figure opens it up to show a bracelet. The figure then lifts its hand closer to you and asks, 'Do you wish to put it on?'";
+              }
+              else
+              {
+                  myQuestion.innerHTML = "Invalid answer. Please Enter Left or Right.";
+              }
+          }
+
+          function getChoice2()
+          {
+              var answer = document.getElementById("choice2").value;
+              var myQuestion = document.getElementById("question");
+              if(answer === "Yes")
+              {
+                  document.getElementById("choice2").style.display="none";
+                  document.getElementById("btnSubmit2").style.display="none";
+
+                  document.getElementById("choice4").style.display="block";
+                  document.getElementById("btnSubmit4").style.display="block";
+
+                  myQuestion.innerHTML = "You put on the ring, and as you do, the hooded figure smiles and says, 'I'm so glad you assented.' Your vision fades to black, but not before you notice your finger dissolving out of existence. Do you wish to try again?";
+              }
+              else if(answer === "No")
+              {
+                  document.getElementById("choice2").style.display="none";
+                  document.getElementById("btnSubmit2").style.display="none";
+
+                  document.getElementById("choice4").style.display="block";
+                  document.getElementById("btnSubmit4").style.display="block";
+
+                  myQuestion.innerHTML = "You refuse, and the hooded figure shakes its head as if disappointed. 'Let us try this again then'. The ring dissolves out of existence and with its now empty hand, touches a finger to your forehead, and your vision fades to black. Do you wish to try again?";
+              }
+              else
+              {
+                  myQuestion.innerHTML = "Invalid answer. Please Enter Yes or No.";
+              }
+          }
+
+          function getChoice3()
+          {
+              var answer = document.getElementById("choice3").value;
+              var myQuestion = document.getElementById("question");
+              if(answer === "Yes")
+              {
+                  document.getElementById("choice3").style.display="none";
+                  document.getElementById("btnSubmit3").style.display="none";
+
+                  document.getElementById("choice4").style.display="block";
+                  document.getElementById("btnSubmit4").style.display="block";
+
+                  myQuestion.innerHTML = "You put on the bracelet, and as you do, the hooded figure smiles and says, 'I'm so glad you assented.' Your vision fades to black, but not before you notice your wrist dissolving out of existence. Do you wish to try again?";
+              }
+              else if(answer === "No")
+              {
+                  document.getElementById("choice3").style.display="none";
+                  document.getElementById("btnSubmit3").style.display="none";
+
+                  document.getElementById("choice4").style.display="block";
+                  document.getElementById("btnSubmit4").style.display="block";
+
+                  myQuestion.innerHTML = "You refuse, and the hooded figure shakes its head as if disappointed. 'Let us try this again then'. The bracelet dissolves out of existence and with its now empty hand, touches a finger to your forehead, and your vision fades to black. Do you wish to try again?";
+              }
+              else
+              {
+                  myQuestion.innerHTML = "Invalid answer. Please Enter Yes or No.";
+              }
+          }
+
+          function getChoice4(end)
+          {
+              var answer = document.getElementById("choice4").value;
+              var myQuestion = document.getElementById("question");
+              if(answer === "Try Again")
+              {
+                  document.getElementById("choice4").style.display="none";
+                  document.getElementById("btnSubmit4").style.display="none";
+
+                  document.getElementById("choice").style.display="block";
+                  document.getElementById("btnSubmit").style.display="block";
+
+                  document.getElementById("mainImage").src = "./images/Hooded_Figure.avif";
+
+                  myQuestion.innerHTML = "You find yourself opening your eyes, and you see that your surroudnings have become an endless expanse of white nothingness, with only a murky white fog clinging to and obscuring the ground. Suddenly, a hooded figure in black appears before you, seemingly out of thin air. All that is visible of the face is the mouth. In a voice that is hard to place both the figure's age and gender, it speaks, 'I shall give you a choice. The Left. The Right. Which would you prefer?' It lifts its hands to show that both of them are curled around something, hiding it from view. Which do you choose?";
+
+                  end = true;
+                  return end;
+              }
+              else if(answer === "Quit")
+              {
+                  document.getElementById("choice4").style.display="none";
+                  document.getElementById("btnSubmit4").style.display="none";
+
+                  myQuestion.innerHTML = "The blackness consumes you, and oblivion becomes all you know.";
+
+                  document.getElementById("mainImage").src = "./images/darkness.webp";
+
+                  end = false;
+                  return end;
+              }
+              else
+              {
+                  myQuestion.innerHTML = "Invalid answer. Please Enter Try Again or Quit.";
+              }
+          }
+      } while(getChoice4(end));
+    </script>
+
+
+    <body>
+        <h1>Ouroboros</h1>
+        <br>
+        <img src="./images/Hooded_Figure.avif" height="219" width="295" id="mainImage">
+        <br>
+    <div id="question">
+        You find yourself opening your eyes, and you see that your surroudnings have become an endless expanse of white nothingness, with only a murky white fog clinging to and obscuring the ground. Suddenly, a hooded figure in black appears before you, seemingly out of thin air. All that is visible of the face is the mouth. In a voice that is hard to place both the figure's age and gender, it speaks, 'I shall give you a choice. The Left. The Right. Which would you prefer?' It lifts its hands to show that both of them are curled around something, hiding it from view. Which do you choose?
+    </div>
+        <br>
+        <input type="text" size="30" id="choice" value="Left or Right">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Yes or No" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Yes or No"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice4" value="Try Again or Quit"  style="display:none">
+        <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Click to continue</button>
+    </body>
+
+</html>
