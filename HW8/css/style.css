@@ -1,0 +1,73 @@
+#square1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 300;
+    top: 0;
+}
+
+#square2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 1100;
+    top: 0;
+}
+
+#square3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 1100;
+    top: 600;
+}
+
+#square4 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 300;
+    top: 600;
+}
+
+#prelim{
+    background: blue;
+    color:white;
+}
+
+#content{
+    background: green;
+    color:white;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.box{
+    border: 5px solid black;
+    margin: auto;
+    width: 25%;
+    padding: 3px;
+}
+
+.wrapper{
+    border: 25px solid black;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+}
