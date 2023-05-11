@@ -1,0 +1,209 @@
+h1 {
+    color: #333;
+    font-family: Unbounded;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: #002587;
+  margin-top: 0;
+  height: 6em;
+  width: 99%;
+  text-align: right;
+  padding-right: 3em;
+}
+
+body {
+  background-image: url("../images/background.png");
+}
+
+#flag {
+    background-image: url("../images/flag.png");
+    background-size: 15% 100%;
+    margin-left: auto;
+    background-repeat: no-repeat;
+}
+
+.site-name {
+    color: #004CCB;
+    float: left;
+    min-width: 6em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+    margin: 1em .2em;
+    height: 100px;
+}
+
+.button-item1, .button-item2 {
+    display: inline-block;
+    margin: auto;
+    min-width: 6em;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 28px;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-family: Unbounded;
+    color: white;
+    text-decoration: none;
+}
+
+.button-item1 {
+  display: block;
+}
+
+.button-item2 {
+  display: none;
+}
+
+.wrapper {
+  width: 35%;
+  display: inline-block;
+}
+
+.wrapper:hover .button-item1 {
+  display: none;
+}
+
+.wrapper:hover .button-item2 {
+  display: block;
+}
+
+.links {
+  text-align: center;
+}
+
+#bear-banner {
+    background-image: url("../images/grizzly.jpg");
+    background-size: 100% 175%;
+}
+
+#bird-banner {
+    background-image: url("../images/meadowlark.jfif");
+    background-size: 100% 175%;
+}
+
+#flower-banner {
+    background-image: url("../images/bitterroot.jfif");
+    background-size: 100% 175%;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 1.8em 0.2em;
+    min-width: 6em;
+    text-align: center;
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-family: Unbounded;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: #004CCB;
+    color: #333;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0.5em 0 0 -1em;
+    color: #000;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 0em 0em 1em 1em;
+    font-family: Unbounded;
+}
+
+.dropdown-content a {
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em 1em 0.5em 1em;
+    min-width: 5.9em;
+    font-family: Unbounded;
+}
+
+.dropdown-item:hover, .dropdown-item:hover a {
+    color: white;
+    background-color: #004CCB;
+}
+
+
+.dropdown:hover{
+    border-radius: 1em 1em 0em 0em;
+}
+
+#flower:hover {
+    border-radius: 0em 0em 1em 1em;
+}
+
+.content-paragraph {
+    margin: auto;
+    color: #333;
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 640px;
+    font-family: Lora;
+}
+
+.image {
+    display: block;
+    width: 1%;
+    padding-left: 100px;
+}
+
+img {
+    border: 20px solid #002587;
+}
+
+#img-link:hover {
+    border: 50px solid #002587;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-center {
+    text-align: center;
+}
+
+#prelim{
+    background: blue;
+    color:white;
+}
+
+.box{
+    border: 5px solid black;
+    margin: auto;
+    width: 25%;
+    padding: 3px;
+}
